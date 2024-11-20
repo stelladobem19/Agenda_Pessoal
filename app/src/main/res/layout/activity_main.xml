@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E3DEDE"
+        android:backgroundTint="#E3DEDE"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_título"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E3DEDE"
+            android:text="Agenda"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome Agendamento" />
+
+            <EditText
+                android:id="@+id/et_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#790297"
+                android:onClick="selectDate"
+                android:text="Data" />
+
+            <Button
+                android:id="@+id/bt_horas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#790297"
+                android:text="Hora" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_Gravar"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#A6018A"
+                android:onClick="inserirRegistro"
+                android:text="Salvar" />
+
+            <Button
+                android:id="@+id/bt_consultar"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#A6018A"
+                android:onClick="abrir_tela_consulta"
+                android:text="Consultar" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_fechar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#DC53F0"
+            android:onClick="fechar_tela"
+            android:text="Fechar" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
