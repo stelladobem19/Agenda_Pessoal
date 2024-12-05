@@ -13,5 +13,5 @@ O aplicativo de agenda para dispositivos móveis é uma solução prática e efi
 2. **Consulta de Compromissos:**  
    - Visualização dos compromissos por data.  
    - Navegação para consultar compromissos futuros ou passados.
-   - 
-Projeto desenvolvido no Android estudio para a disciplina de Engenharia de Aplicaçõe Móveis do curso de Ciência da Computação.
+    
+Projeto desenvolvido no Android Studio para a disciplina de Engenharia de Aplicaçõe Móveis do curso de Ciência da Computação.
